@@ -8,23 +8,38 @@
   </head>
   <body>
     <div class="flex items-center justify-center min-h-screen bg-zinc-700">
-        <!-- Card -->
-        <div class="bg-zinc-600 p-2 rounded-2xl">
-            <!-- flex-container -->
-            <div class="flex">
-                <!-- image -->
-                <div>
-                    <img src="images/image.jpg" alt="" class="h-80 object-fit rounded-xl md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200">
-                </div>
-                <!-- card content -->
-                <div>
-
-                </div>
+      <!-- Card -->
+      <div class="bg-zinc-800 p-2 rounded-2xl my-10 mx-6">
+        <!-- flex-container -->
+        <div class="flex flex-col md:flex-row">
+          <!-- image -->
+          <div>
+            <img
+              src="images/image.jpg"
+              alt=""
+              class="h-80 md:h-64 object-fit w-full rounded-xl md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200"
+            />
+          </div>
+          <!-- card content -->
+          <div class="p-6 md:p-12">
+            <h1 class="text-xl text-white font-medium">
+              Get diet and fitness tips in your inbox
+            </h1>
+            <p class="max-w-xs text-sm text-white text-center my-4">
+              Eat better and exercise better. Sign up for the Diet&Fitness
+              newsletter.
+            </p>
+            <div class="flex flex-col space-x-3 md:flex-row space-y-3">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="bg-zinc-800 py-2 px-4 text-sm placeholder:text-sm text-left border border-zinc-600 focus:outline-none"
+              />
+              <button class="bg-lime-500 text-xs text-zinc-800 px-5 py-3 rounded-md hover:bg-lime-800 hover:text-white duration-500">Subscribe</button>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
-
- 
   </body>
 </html>
