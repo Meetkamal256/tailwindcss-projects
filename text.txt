@@ -1,0 +1,37 @@
+   <!-- Background container -->
+    <div class="flex items-center justify-center min-h-screen bg-zinc-700">
+      <!-- card -->
+      <div class="bg-zinc-800 mx-6 rounded-2xl p-2 my-10">
+        <!-- flex container -->
+        <div class="flex flex-col md:flex-row">
+          <!-- image -->
+          <div>
+            <img
+              src="images/image.jpg"
+              alt=""
+              class="object-fit rounded-xl w-full h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200"
+            />
+          </div>
+          <!-- content -->
+          <div class="p-6 md:p-12">
+            <h1 class="font-serif text-xl font-medium text-center text-white">
+              Get diet and fitness tips in your inbox
+            </h1>
+            <p
+              class="my-4 text-sm text-white max-w-xs text-center md:text-left"
+            >
+              Eat better and exercise better. Sign up for the Diet&fitness
+              newsletter
+            </p>
+            <div class="flex flex-col space-y-3 md:flex-row mt-5 md:space-x-3">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none"
+              />
+              <button class="bg-lime-500 text-xs text-zinc-800 px-5 py-3 rounded-md hover:bg-lime-800 hover:text-white duration-500">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
