@@ -10,38 +10,56 @@
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            fontFamily: {
-              sans: ['Mulish', 'sans-serif'],
-              mono: ['Rokkitt', 'monospace'],
-            },
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Mulish", "sans-serif"],
+            mono: ["Rokkitt", "monospace"],
           },
-        }
-      </script>
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Global container -->
     <div class="flex items-center justify-center min-h-screen bg-rose-100">
       <!-- Card container  -->
       <div
-        class="relative flex flex-col space-y-10 bg-white shadow-2xl rounded-2xl m-6 md:flex-row md:space-y-0 md:m-4"
+        class="relative flex flex-col space-y-10 bg-white shadow-2xl rounded-2xl m-6 md:flex-row md:space-y-0 md:m-6 h-[500px]"
       >
         <!-- left side -->
         <div class="p-6 md:p-20">
-            <h1 class="text-4xl font-medium mb-5 font-sans">Log In</h1>
-            <p class="text-sm font-light text-gray-600 max-w-xs mb-12">
-                Log in to your account to upload or download pictures, videos or music.
-            </p>
-            <input type="text" placeholder="Enter your email address" class="w-full p-6 border border-gray-300 rounded-md
-            placeholder:font-sans placeholder:font-thin">
+          <!-- top content -->
+          <h1 class="text-4xl font-medium mb-5 font-sans">Log In</h1>
+          <p class="text-sm font-light text-gray-600 max-w-xs mb-12">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-thin"
+          />
+          <!-- middle content -->
+          <div
+            class="flex flex-col items-center justify-between space-y-6 text-center mt-6 md:flex-row md:space-y-0"
+          >
+            <div class="font-thin text-center text-cyan-700">
+              Forgot password
+            </div>
+            <button type="button" class="bg-cyan-700 w-full md:w-auto flex items-center justify-center p-6 space-x-4 font-bold font-sans text-white rounded-md shadow-sm
+            shadow-cyan-100 px-9 hover:bg-opacity-90 hover:shadow-lg border transition duration-150 hover:-translate-y-0.5">
+            <span>Next</span>
+            <i class="fa-solid fa-arrow-right ml-3"></i>
+            </button>
+          </div>
         </div>
-
+        
         <!-- Right side -->
+        <i class="fa-regular fa-x"></i>
         <img src="images/image.jpg" alt="" class="w-[430px] hidden md:block" />
         <!-- close button -->
         <!-- <div class="absolute -top-5">
-            <i class="fa-regular fa-x"></i>
         </div> -->
       </div>
     </div>
