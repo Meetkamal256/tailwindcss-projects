@@ -9,6 +9,41 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              sans: ['Mulish', 'sans-serif'],
+              mono: ['Rokkitt', 'monospace'],
+            },
+          },
+        }
+      </script>
   </head>
-  <body></body>
+  <body>
+    <!-- Global container -->
+    <div class="flex items-center justify-center min-h-screen bg-rose-100">
+      <!-- Card container  -->
+      <div
+        class="relative flex flex-col space-y-10 bg-white shadow-2xl rounded-2xl m-6 md:flex-row md:space-y-0 md:m-4"
+      >
+        <!-- left side -->
+        <div class="p-6 md:p-20">
+            <h1 class="text-4xl font-medium mb-5 font-sans">Log In</h1>
+            <p class="text-sm font-light text-gray-600 max-w-xs mb-12">
+                Log in to your account to upload or download pictures, videos or music.
+            </p>
+            <input type="text" placeholder="Enter your email address" class="w-full p-6 border border-gray-300 rounded-md
+            placeholder:font-sans placeholder:font-thin">
+        </div>
+
+        <!-- Right side -->
+        <img src="images/image.jpg" alt="" class="w-[430px] hidden md:block" />
+        <!-- close button -->
+        <!-- <div class="absolute -top-5">
+            <i class="fa-regular fa-x"></i>
+        </div> -->
+      </div>
+    </div>
+  </body>
 </html>
